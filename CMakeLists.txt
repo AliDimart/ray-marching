@@ -7,8 +7,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Явно указываем все исходные файлы
 add_executable(RayMarching
-    src/main.cpp
-    src/vec3.cpp 
+	src/main.cpp
+   	src/vec3.cpp 
+   	${CMAKE_CURRENT_SOURCE_DIR}/include/includes.h
+   	${CMAKE_CURRENT_SOURCE_DIR}/include/Object.h
+	${CMAKE_CURRENT_SOURCE_DIR}/include/vec3.h
+	${CMAKE_CURRENT_SOURCE_DIR}/include/World.h
 )
 
 # Пути к заголовкам
